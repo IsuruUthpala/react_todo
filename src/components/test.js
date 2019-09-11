@@ -148,7 +148,7 @@ class test extends Component {
                     <button
                         onClick={this.posttolist}
 
-                        className="btn btn-secondary btn-sm"
+                        className="btn btn-info btn-sm"
                     > Create New To Do </button>
 
                 </div>
