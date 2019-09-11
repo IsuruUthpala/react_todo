@@ -27,30 +27,37 @@ class test extends Component {
         let e = document.getElementById("pri");
         let urg = e.options[e.selectedIndex].value;
 
+        if (task == null) {
+            alert("Task Empty");
 
 
-        alert("Task Added");
+        }
+        else {
 
-        //console.log('method called');
 
-        return fetch('http://localhost:3000/list', {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
+
+            alert("Task Added");
+
+            //console.log('method called');
+
+            return fetch('http://localhost:3000/list', {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    task: task,
+                    priority: urg,
+                }),
+
+
             },
-            body: JSON.stringify({
-                task: task,
-                priority: urg,
-            }),
+                window.location.reload(true)
+            );
 
 
-        },
-            window.location.reload(true)
-        );
-
-
-
+        }
 
 
 
