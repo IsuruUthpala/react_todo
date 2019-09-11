@@ -12,20 +12,21 @@ import Test from "./components/test";
 
 const routing = (
     <Router>
-        <div>
-            <ul>
-                <li>
-                    <Link to="/ToDoList">To Do List</Link>
+        <div className="nav nav-tabs" >
+            <ul className="nav">
+                <li className="nav-item" >
+                    <Link className="nav-link" to="/ToDoList">To Do List</Link>
                 </li>
-                <li>
-                    <Link to="/task">Create New To Do</Link>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/task">Create New To Do</Link>
                 </li>
-                <li>
-                    <Link to="/test">test json</Link>
+                <li className="nav-item" >
+                    <Link className="nav-link" to="/test">test json</Link>
                 </li>
 
             </ul>
-
+        </div>
+        <div>
 
 
             <Route path="/ToDoList" component={ToDoList} />
