@@ -119,25 +119,32 @@ class test extends Component {
         return (
             <div className="container">
 
-                <div>
+                <div className="col-xs-6">
 
-                    Enter task
+                    <h3 className="col-sm-3">Enter task</h3>
 
-<input id="task"
+                    <input className="col-sm-2" id="task"
                         type="text"
 
                     />
 
+                    <div>
 
-                    <h6> Select priority </h6>
-                    <select id="pri"
+                        <span>
 
-                        name="pri">
-                        <option value="High">High</option>
-                        <option value="Normal">Normal</option>
-                        <option value="Low">Low</option>
 
-                    </select>
+                            <h3 className="col-sm-3"> Select priority </h3>
+                            <select className="dropdown-header" id="pri"
+
+                                name="pri">
+                                <option value="High">High</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Low">Low</option>
+
+                            </select>
+                        </span>
+                    </div>
+
                     <button
                         onClick={this.posttolist}
 
