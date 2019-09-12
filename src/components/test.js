@@ -66,7 +66,7 @@ class test extends Component {
     }
     deleteFromList(e, id) {
 
-
+        //comment1
         alert("deleted");
 
 
